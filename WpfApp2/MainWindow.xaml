@@ -7,10 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="кредит бесплатно" Click="Button_Click" HorizontalAlignment="Left" Height="65" Margin="223,131,0,0" VerticalAlignment="Top" Width="96"/>
-        <Button Content="фото" Click="SelectedImage" HorizontalAlignment="Left" Height="65" Margin="428,131,0,0" VerticalAlignment="Top" Width="135"/>
-        <Image HorizontalAlignment="Left" Height="95" Margin="58,278,0,0" VerticalAlignment="Top" Width="475" x:Name="img1"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="299,63,0,0" Height="25" Click="Button_Click_1"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="214*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="509*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="кредит бесплатно" Click="Button_Click" HorizontalAlignment="Left" Height="65" Margin="9,131,0,0" VerticalAlignment="Top" Width="96" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button Content="фото" Click="SelectedImage" HorizontalAlignment="Left" Height="65" Margin="144.605,131,0,0" VerticalAlignment="Top" Width="135" Grid.Column="2"/>
+        <Image HorizontalAlignment="Left" Height="95" Margin="58,278,0,0" VerticalAlignment="Top" Width="475" x:Name="img1" Grid.ColumnSpan="3"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="113" Margin="15.605,63,0,0" Height="25" Click="Button_Click_1" Grid.Column="2"/>
+        <Button Content="Button" Click="Button_Click_2" HorizontalAlignment="Left" Height="43" Margin="69,88,0,0" VerticalAlignment="Top" Width="105"/>
 
     </Grid>
 </Window>
