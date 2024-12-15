@@ -20,6 +20,7 @@
         <Image HorizontalAlignment="Left" Height="100" Margin="-128,46,0,0" VerticalAlignment="Top" Width="100"/>
         <Button x:Name="btnShowPopup" Content="Показать Popup" Width="150" Height="50" 
             Click="btnShowPopup_Click" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Margin="281,63,78,310"/>
+        <Button Content="Календарь" Grid.Column="2" Margin="299,262,59,99" Click="Button_Click_4"/>
 
     </Grid>
 </Window>

@@ -80,6 +80,13 @@ namespace WpfApp2
             Window4 popup = new Window4();
             popup.ShowDialog(); // Используем ShowDialog для модального окна
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            Window5 window5 = new Window5();
+            window5.Show();
+            this.Close();
+        }
     }
 }
 
